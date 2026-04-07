@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://he-is-henry.github.io/Olanrewaju-Basit/sitemap.xml
+Sitemap: https://he-is-henry.github.io/olanrewaju-basit/sitemap.xml
