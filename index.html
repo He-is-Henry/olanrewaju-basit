@@ -1,320 +1,524 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Olanrewaju Basit | Full-Stack Developer</title>
     <meta
       name="google-site-verification"
       content="-02B1NhOwSz4AcICGsRnKk4z5U6fKbKZXVYLv32q1Uw"
     />
-    <link
-      rel="canonical"
-      href="https://he-is-henry.github.io/Olanrewaju-Basit/"
-    />
-
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Olanrewaju Basit | Full-Stack Developer | MERN, Academic Platforms
-    </title>
-    <link
-      rel="sitemap"
-      type="application/xml"
-      title="Sitemap"
-      href="sitemap.xml"
-    />
-
     <meta
       name="description"
       content="Official portfolio of Olanrewaju Basit Oluwanifemi – Full-stack developer specializing in the MERN stack, journal submission platforms, and scalable web apps. Creator of DSDHJ.ng and DomainJournals.com."
     />
-    <link rel="shortcut icon" href="me.jpg" type="image/x-icon" />
     <meta
       name="keywords"
-      content="Olanrewaju Basit, MERN Developer, Full Stack Developer, DSDHJ, DomainJournals, Nigeria Developer, Academic Journal Platform, React Developer, Node.js, MongoDB, Web Developer Portfolio"
+      content="Olanrewaju Basit, MERN Developer, Full Stack Developer, DSDHJ, DomainJournals, Nigeria Developer, Academic Journal Platform, React Developer, Node.js, MongoDB"
     />
     <meta name="author" content="Olanrewaju Basit Oluwanifemi" />
-    <link rel="stylesheet" href="style.css" />
-
-    <!-- Open Graph Meta Tags -->
     <meta
       property="og:title"
-      content="Olanrewaju Basit | Full-Stack Developer | Project Manager"
+      content="Olanrewaju Basit | Full-Stack Developer"
     />
     <meta
       property="og:description"
-      content="Explore my projects, including DSDHJ.ng and DomainJournals.com, plus personal insights and ways to connect."
-    />
-
-    <meta
-      property="og:image"
-      content="https://he-is-henry.github.io/Olanrewaju-Basit/cover.jpg"
+      content="Building scalable web platforms. Creator of DSDHJ.ng and DomainJournals.com."
     />
     <meta
       property="og:url"
       content="https://he-is-henry.github.io/Olanrewaju-Basit"
     />
     <meta property="og:type" content="website" />
-
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="Olanrewaju Basit | Full-Stack Developer"
+    <link
+      rel="canonical"
+      href="https://he-is-henry.github.io/Olanrewaju-Basit/"
     />
-    <meta
-      name="twitter:description"
-      content="Building modern web apps and journal platforms. Visit my portfolio to see what I'm working on."
+    <link rel="shortcut icon" href="me.jpg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&display=swap"
+      rel="stylesheet"
     />
-
-    <meta
-      name="twitter:image"
-      content="https://he-is-henry.github.io/Olanrewaju-Basit/me.jpg"
-    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <img
-        src="me.jpg"
-        alt="Olanrewaju Basit Oluwanifemi - Full-Stack Developer"
-      />
-      <h1 class="heading">Olanrewaju Basit Oluwanifemi</h1>
-    </header>
+    <div class="blob"></div>
 
-    <!-- Main Content Section -->
-    <main>
-      <section class="container">
-        <div class="card">
-          <h2>Who I Am</h2>
+    <!-- NAV -->
+    <nav>
+      <a href="#hero" class="nav-logo">Basit.</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#stack">Stack</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#connect">Connect</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+      <span class="hero-tag">Available for opportunities</span>
+      <h1 class="hero-name">Olanrewaju<br /><span>Basit.</span></h1>
+      <p class="hero-title">Full-Stack Developer · MERN Stack</p>
+      <p class="hero-desc">
+        I build real systems — authentication flows, manuscript workflows, exam
+        platforms, and social apps. Based in Lagos, Nigeria. Currently a student
+        at LASU and the builder behind HDW.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">See my work</a>
+        <a href="https://wa.link/8sc5hn" target="_blank" class="btn btn-outline"
+          >Hire me</a
+        >
+        <a href="#" class="btn btn-outline" id="cv-btn">Download CV</a>
+      </div>
+      <div class="hero-scroll">
+        <span class="scroll-line"></span>
+        scroll
+      </div>
+    </section>
+
+    <div class="divider"><hr /></div>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="section-label">About</div>
+      <h2 class="section-title">Who I am</h2>
+      <div class="about-grid reveal">
+        <div class="about-text">
           <p>
-            I'm a passionate full-stack developer currently focused on the MERN
-            stack. I enjoy building clean, responsive websites and web
-            applications that are intuitive and user-friendly. I’m committed to
-            continuous learning and always seek ways to improve and keep up with
-            the latest technologies in web development.
+            I'm a full-stack JavaScript developer who actually builds things.
+            Not just tutorial projects — real platforms with real users,
+            authentication, payment flows, manuscript submission workflows, and
+            live domains.
+          </p>
+          <p>
+            I care about architecture. Clean backends, secure auth, good UX on
+            mobile. I think about what could break before it does.
+          </p>
+          <p>
+            Currently expanding into Python and advanced database design. Also
+            working on Nexus — a real-time social messaging app — and building
+            HDW (Henry's Digital Workshop) as a sustainable vehicle for my work.
           </p>
         </div>
-
-        <div class="card">
-          <h2>Projects & Achievements</h2>
-          <p>
-            I recently completed a frontend development cohort at Edu Champs and
-            graduated as the top performer. Since then, I’ve been actively
-            working on projects that sharpen my frontend and full-stack skills:
-          </p>
-          <ul>
-            <li>
-              <strong
-                ><a
-                  href="https://social-app-719ec.web.app/posts"
-                  target="_blank"
-                  >Nexus</a
-                ></strong
-              >
-              – A social web app I built after finishing my React tutorial. It
-              uses Firebase for backend logic. Though the current version has
-              some security concerns, I’m rewriting the backend with proper MERN
-              stack practices and preparing for a secure relaunch.
-            </li>
-            <li>
-              <strong
-                ><a
-                  href="https://he-is-henry.github.io/rock.paper.scissors/"
-                  target="_blank"
-                  >Rock Paper Scissors</a
-                ></strong
-              >
-              – A classic game with a simple UI and smooth interactions.
-            </li>
-            <li>
-              <strong
-                ><a href="https://he-is-henry.github.io/snake/" target="_blank"
-                  >Snake Game</a
-                ></strong
-              >
-              – Built with JavaScript and canvas; a nostalgic twist on the
-              old-school snake game.
-            </li>
-            <li>
-              <strong
-                ><a
-                  href="https://he-is-henry.github.io/Flappy-bird/"
-                  target="_blank"
-                  >Flappy Bird Clone</a
-                ></strong
-              >
-              – A fun side-scrolling game recreated from scratch using vanilla
-              JavaScript.
-            </li>
-            <li>
-              <strong
-                ><a
-                  href="https://he-is-henry.github.io/gp-simulator/"
-                  target="_blank"
-                  >GP Simulator</a
-                ></strong
-              >
-              – Simulates semester results and GPA calculations; useful for
-              students.
-            </li>
-          </ul>
+        <div class="about-details">
+          <div class="detail-item">
+            <span class="detail-label">Location</span>
+            <span class="detail-value">Lagos, Nigeria</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Education</span>
+            <span class="detail-value"
+              >BSc Project Management · LASU · 300L</span
+            >
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Focus</span>
+            <span class="detail-value"
+              >MERN Stack · Backend Architecture · Auth Systems</span
+            >
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Currently learning</span>
+            <span class="detail-value">Python · Advanced DB Design</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">GitHub</span>
+            <span class="detail-value"
+              ><a
+                href="https://github.com/He-is-Henry"
+                target="_blank"
+                style="color: var(--accent); text-decoration: none"
+                >He-is-Henry</a
+              ></span
+            >
+          </div>
         </div>
-        <div class="card">
-          <h2>My Platforms</h2>
-          <p>
-            Beyond personal projects, I've worked on full-scale systems for real
-            academic publishing needs:
-          </p>
-          <ul>
-            <li>
-              <strong
-                ><a href="https://dsdhj.ng" target="_blank">DSDHJ.ng</a></strong
-              >
-              – The Digital Science & Developmental Health Journal, a
-              single-journal submission platform I built from scratch with
-              authentication, manuscript workflows, and publishing tools.
-            </li>
-            <li>
-              <strong
-                ><a href="https://domainjournals.com" target="_blank"
-                  >DomainJournals.com</a
-                ></strong
-              >
-              – A more advanced, scalable platform designed for managing
-              multiple academic journals. Features role-based access, automated
-              email flows, submission tracking, and dynamic publishing.
-            </li>
-          </ul>
+      </div>
+    </section>
+
+    <div class="divider"><hr /></div>
+
+    <!-- STACK -->
+    <section id="stack">
+      <div class="section-label">Tech</div>
+      <h2 class="section-title">My stack</h2>
+      <div class="stack-categories reveal">
+        <div class="stack-card">
+          <div class="stack-cat-title">Languages</div>
+          <div class="stack-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">Python</span>
+          </div>
+        </div>
+        <div class="stack-card">
+          <div class="stack-cat-title">Frontend</div>
+          <div class="stack-tags">
+            <span class="tag">React</span>
+            <span class="tag">Next.js</span>
+            <span class="tag">Vite</span>
+            <span class="tag">Tailwind CSS</span>
+            <span class="tag">Bootstrap</span>
+          </div>
+        </div>
+        <div class="stack-card">
+          <div class="stack-cat-title">Backend</div>
+          <div class="stack-tags">
+            <span class="tag">Node.js</span>
+            <span class="tag">Express.js</span>
+            <span class="tag">NestJS</span>
+            <span class="tag">Socket.IO</span>
+            <span class="tag">REST APIs</span>
+            <span class="tag">JWT Auth</span>
+            <span class="tag">Bcrypt</span>
+          </div>
+        </div>
+        <div class="stack-card">
+          <div class="stack-cat-title">Databases</div>
+          <div class="stack-tags">
+            <span class="tag">MongoDB</span>
+            <span class="tag">Mongoose</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">Prisma</span>
+            <span class="tag">Neon</span>
+          </div>
+        </div>
+        <div class="stack-card">
+          <div class="stack-cat-title">Cloud & Tools</div>
+          <div class="stack-tags">
+            <span class="tag">Cloudinary</span>
+            <span class="tag">Firebase</span>
+            <span class="tag">Git</span>
+            <span class="tag">Postman</span>
+            <span class="tag">Multer</span>
+            <span class="tag">Paystack</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"><hr /></div>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="section-label">Work</div>
+      <h2 class="section-title">Projects & Platforms</h2>
+
+      <div class="projects-grid">
+        <!-- Domain Journals -->
+        <div class="project-card reveal">
+          <div>
+            <span class="project-badge badge-live">● Live</span>
+            <div class="project-name">Domain Journals</div>
+            <p class="project-desc">
+              A full-scale academic publishing platform supporting multiple
+              journals. Built for real users — authors submit manuscripts,
+              editors review, admins publish. Includes an integrated online exam
+              system.
+            </p>
+            <ul class="project-features">
+              <li>Author & admin account system with role-based access</li>
+              <li>Manuscript submission, review, and publishing workflow</li>
+              <li>JWT authentication with token rotation & bcrypt</li>
+              <li>Admin dashboards with analytics</li>
+              <li>Integrated online exam system with timed sessions</li>
+              <li>Bulk result generation and printing</li>
+              <li>Automated email flows and payment integration</li>
+            </ul>
+            <div class="project-stack">
+              <span class="stack-tag">React</span>
+              <span class="stack-tag">Node.js</span>
+              <span class="stack-tag">Express</span>
+              <span class="stack-tag">MongoDB</span>
+              <span class="stack-tag">Cloudinary</span>
+              <span class="stack-tag">JWT</span>
+              <span class="stack-tag">Paystack</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a
+              href="https://domainjournals.com"
+              target="_blank"
+              class="project-link"
+              >↗ Live site</a
+            >
+            <a
+              href="https://github.com/He-is-Henry/domain-journals-backend"
+              target="_blank"
+              class="project-link"
+              >⌥ Backend</a
+            >
+            <a
+              href="https://github.com/domain-journals-hosting/domain-journals"
+              target="_blank"
+              class="project-link"
+              >⌥ Frontend</a
+            >
+          </div>
         </div>
 
-        <div class="card">
-          <h2>Education</h2>
-          <p>
-            I’m a 200-level Project Management student at Lagos State University
-            (LASU). My education sharpens my ability to organize, plan, and
-            manage resources effectively — skills that directly influence how I
-            approach development projects.
-          </p>
+        <!-- DSDHJ -->
+        <div class="project-card reveal">
+          <div>
+            <span class="project-badge badge-live">● Live</span>
+            <div class="project-name">DSDHJ</div>
+            <p class="project-desc">
+              Delta State Dental Health Journal — a single-journal academic
+              submission platform built from scratch with full authentication,
+              manuscript workflows, and publishing tools.
+            </p>
+            <ul class="project-features">
+              <li>Full manuscript submission and editorial workflow</li>
+              <li>Secure user authentication system</li>
+              <li>Publishing and issue management tools</li>
+              <li>PDF handling and file upload pipeline</li>
+            </ul>
+            <div class="project-stack">
+              <span class="stack-tag">React</span>
+              <span class="stack-tag">Node.js</span>
+              <span class="stack-tag">Express</span>
+              <span class="stack-tag">MongoDB</span>
+              <span class="stack-tag">Cloudinary</span>
+              <span class="stack-tag">JWT</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://dsdhj.ng" target="_blank" class="project-link"
+              >↗ Live site</a
+            >
+            <a
+              href="https://github.com/He-is-Henry/dsdhj-api"
+              target="_blank"
+              class="project-link"
+              >⌥ Backend</a
+            >
+            <a
+              href="https://github.com/He-is-Henry/dsdhj"
+              target="_blank"
+              class="project-link"
+              >⌥ Frontend</a
+            >
+          </div>
         </div>
-      </section>
 
-      <!-- Flexbox Content Section -->
-      <section class="flex-container">
-        <div class="flex-item">
-          <h3>My Passion for Learning</h3>
-          <p>
-            I’m an eager learner who’s always experimenting with new tools and
-            frameworks. From learning backend with Node.js to exploring MongoDB,
-            I love diving deep into the technologies that power the web.
-          </p>
+        <!-- Nexus -->
+        <div class="project-card reveal">
+          <div>
+            <span class="project-badge badge-dev">◎ In development</span>
+            <div class="project-name">Nexus</div>
+            <p class="project-desc">
+              A real-time social messaging platform built with the MERN stack.
+              Currently being rebuilt with proper backend architecture, secure
+              auth, and Socket.IO for real-time communication.
+            </p>
+            <ul class="project-features">
+              <li>User accounts and authentication</li>
+              <li>Real-time messaging with Socket.IO</li>
+              <li>Social interaction features</li>
+              <li>Full MERN stack architecture</li>
+            </ul>
+            <div class="project-stack">
+              <span class="stack-tag">MongoDB</span>
+              <span class="stack-tag">Express</span>
+              <span class="stack-tag">React</span>
+              <span class="stack-tag">Node.js</span>
+              <span class="stack-tag">Socket.IO</span>
+              <span class="stack-tag">JWT</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a
+              href="https://github.com/He-is-Henry/nexus"
+              target="_blank"
+              class="project-link"
+              >⌥ GitHub</a
+            >
+          </div>
         </div>
 
-        <div class="flex-item">
-          <h3>My Coding Journey</h3>
-          <p>
-            What began as curiosity has grown into a deep passion for software
-            development. Through consistent practice, personal projects, and
-            real-world problem-solving, I’ve built a strong technical foundation
-            and an even stronger drive to grow.
-          </p>
+        <!-- GPA Simulator -->
+        <div class="project-card reveal">
+          <div>
+            <span class="project-badge badge-live">● Live</span>
+            <div class="project-name">GPA Simulator</div>
+            <p class="project-desc">
+              A dynamic frontend tool that calculates semester GPA based on
+              course units and grades. Multi-semester support, live calculation,
+              and local save/load functionality.
+            </p>
+            <ul class="project-features">
+              <li>Dynamic course addition with live GPA calculation</li>
+              <li>Multi-semester GPA tracking</li>
+              <li>Save and load functionality</li>
+            </ul>
+            <div class="project-stack">
+              <span class="stack-tag">HTML</span>
+              <span class="stack-tag">CSS</span>
+              <span class="stack-tag">JavaScript</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a
+              href="https://he-is-henry.github.io/gp-simulator/"
+              target="_blank"
+              class="project-link"
+              >↗ Live site</a
+            >
+          </div>
         </div>
+      </div>
 
-        <div class="flex-item">
-          <h3>Mentorship & Learning</h3>
-          <p>
-            I’ve had support from amazing mentors along the way. Edu Champs
-            helped me grasp frontend fundamentals, while YouTube creators like
-            Dave Gray inspired me to dive deeper into full-stack development.
-            Their guidance has been invaluable.
-          </p>
+      <!-- Mini projects -->
+      <p
+        style="
+          font-size: 0.72rem;
+          color: var(--muted);
+          margin-top: 40px;
+          margin-bottom: 16px;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+        "
+      >
+        Practice builds
+      </p>
+      <div class="mini-projects">
+        <a
+          href="https://he-is-henry.github.io/rock.paper.scissors/"
+          target="_blank"
+          class="mini-card"
+        >
+          <div class="mini-card-name">Rock Paper Scissors</div>
+          <div class="mini-card-desc">Vanilla JS · Game logic</div>
+        </a>
+        <a
+          href="https://he-is-henry.github.io/snake/"
+          target="_blank"
+          class="mini-card"
+        >
+          <div class="mini-card-name">Snake Game</div>
+          <div class="mini-card-desc">Canvas · JS</div>
+        </a>
+        <a
+          href="https://he-is-henry.github.io/Flappy-bird/"
+          target="_blank"
+          class="mini-card"
+        >
+          <div class="mini-card-name">Flappy Bird Clone</div>
+          <div class="mini-card-desc">Vanilla JS · Canvas</div>
+        </a>
+      </div>
+    </section>
+
+    <div class="divider"><hr /></div>
+
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements">
+      <div class="section-label">Recognition</div>
+      <h2 class="section-title">Achievements</h2>
+      <div class="achievements-grid reveal">
+        <div class="achievement-card">
+          <div class="achievement-icon">🏆</div>
+          <div class="achievement-title">Cohort Top Performer</div>
+          <div class="achievement-desc">
+            Graduated first overall in Edu Champs' frontend development cohort.
+          </div>
         </div>
-        <section class="card">
-          <h2>More About Me</h2>
-          <p>
-            I’m not just about code. I’m driven by growth — both in skill and
-            impact. Whether it's helping a journal publish its next issue or
-            assisting someone new to tech, I enjoy turning small wins into
-            lasting progress. I'm also working toward turning my passion into
-            something sustainable through HDW — Henry’s Digital Workshop.
-          </p>
-          <p>
-            Outside coding, I enjoy learning about startups, mentoring juniors,
-            and collaborating on impactful ideas. My journey is still unfolding,
-            and I'm excited about what comes next.
-          </p>
-        </section>
-      </section>
-
-      <!-- Responsive Table Section -->
-      <section class="flex-container">
-        <h2>Insights & Details</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Category</th>
-              <th>Detail</th>
-              <th>Description</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td data-label="Category">Achievement</td>
-              <td data-label="Detail">Cohort Top Performer</td>
-              <td data-label="Description">
-                Graduated first overall in Edu Champs' frontend development
-                cohort.
-              </td>
-            </tr>
-            <tr>
-              <td data-label="Category">Achievement</td>
-              <td data-label="Detail">Coding Contest Winner</td>
-              <td data-label="Description">
-                Placed first for two consecutive weeks in a web development
-                leaderboard challenge.
-              </td>
-            </tr>
-            <tr>
-              <td data-label="Category">Experience</td>
-              <td data-label="Detail">Web Development</td>
-              <td data-label="Description">
-                Hands-on experience in full-stack-development and currently
-                expanding into mobile app development.
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-
-      <!-- Button Section -->
-      <section class="button-section">
-        <h2>Connect with Me</h2>
-        <div class="button-container">
-          <a href="https://wa.link/8sc5hn" target="_blank">
-            <button class="button1">Hire Me</button>
-          </a>
-
-          <a href="https://wa.link/u9zodx" target="_blank">
-            <button class="button">Reach Out</button>
-          </a>
-
-          <a href="https://selar.co/showlove/hdw" target="_blank">
-            <button class="button">Donate</button>
-          </a>
+        <div class="achievement-card">
+          <div class="achievement-icon">🥇</div>
+          <div class="achievement-title">Coding Contest Winner</div>
+          <div class="achievement-desc">
+            Placed first for two consecutive weeks in a web development
+            leaderboard challenge.
+          </div>
         </div>
-      </section>
-    </main>
+        <div class="achievement-card">
+          <div class="achievement-icon">🚀</div>
+          <div class="achievement-title">2 Live Platforms</div>
+          <div class="achievement-desc">
+            Built and deployed two real-world academic journal platforms —
+            DomainJournals.com and DSDHJ.ng — as a student.
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- Footer -->
+    <div class="divider"><hr /></div>
+
+    <!-- CONNECT -->
+    <section id="connect">
+      <div class="section-label">Contact</div>
+      <h2 class="section-title">Let's work together</h2>
+      <p class="connect-desc">
+        Open to freelance projects, internships, and collaboration. If you need
+        something built properly, reach out.
+      </p>
+      <div class="connect-buttons">
+        <a href="https://wa.link/8sc5hn" target="_blank" class="btn btn-primary"
+          >Hire me</a
+        >
+        <a href="https://wa.link/u9zodx" target="_blank" class="btn btn-outline"
+          >Reach out</a
+        >
+        <a href="mailto:henries90@gmail.com" class="btn btn-outline"
+          >Email me</a
+        >
+      </div>
+      <div class="social-links">
+        <a
+          href="https://github.com/He-is-Henry"
+          target="_blank"
+          class="social-link"
+          >↗ GitHub</a
+        >
+        <a
+          href="https://www.linkedin.com/in/basit-olanrewaju-07b296344"
+          target="_blank"
+          class="social-link"
+          >↗ LinkedIn</a
+        >
+        <a
+          href="https://selar.co/showlove/hdw"
+          target="_blank"
+          class="social-link"
+          >↗ Support HDW</a
+        >
+      </div>
+    </section>
+
+    <!-- FOOTER -->
     <footer>
-      <a
-        href="https://www.linkedin.com/in/basit-olanrewaju-07b296344"
-        target="_blank"
-        rel="noopener"
-        >LinkedIn</a
+      <span class="footer-copy">© 2025 Olanrewaju Basit Oluwanifemi</span>
+      <span class="footer-hdw"
+        >Built by <span>HDW</span> — Henry's Digital Workshop</span
       >
-      <a href="https://github.com/he-is-henry" target="_blank" rel="noopener"
-        >GitHub</a
-      >
-
-      <p>&copy; 2024 - Henry | Personal Portfolio</p>
     </footer>
+
+    <script>
+      // Scroll reveal
+      const reveals = document.querySelectorAll(".reveal");
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+            }
+          });
+        },
+        { threshold: 0.1 },
+      );
+      reveals.forEach((el) => observer.observe(el));
+
+      // CV button placeholder
+      document.getElementById("cv-btn").addEventListener("click", (e) => {
+        e.preventDefault();
+        alert("CV coming soon — check back shortly.");
+      });
+    </script>
   </body>
 </html>
