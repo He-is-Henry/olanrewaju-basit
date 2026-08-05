@@ -25,10 +25,7 @@
       property="og:description"
       content="Building scalable web platforms. Creator of DSDHJ.ng and DomainJournals.com."
     />
-    <meta
-      property="og:url"
-      content="https://he-is-henry.github.io/Olanrewaju-Basit"
-    />
+    <meta property="og:url" content="https://olanrewajubasit.vercel.app/" />
     <meta property="og:type" content="website" />
     <link rel="canonical" href="https://olanrewajubasit.vercel.app/" />
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
@@ -216,19 +213,27 @@
             <span class="project-badge badge-live">● Live</span>
             <div class="project-name">Domain Journals</div>
             <p class="project-desc">
-              A full-scale academic publishing platform supporting multiple
-              journals. Built for real users — authors submit manuscripts,
-              editors review, admins publish. Includes an integrated online exam
-              system.
+              A full-scale academic publishing platform, live since 2025,
+              supporting 4 active journals. Authors submit manuscripts, editors
+              review, admins publish — with an integrated exam system and
+              Paystack-powered course sales.
             </p>
             <ul class="project-features">
               <li>Author & admin account system with role-based access</li>
-              <li>Manuscript submission, review, and publishing workflow</li>
+              <li>
+                Manuscript submission, review, and publishing workflow across 4
+                journals
+              </li>
               <li>JWT authentication with token rotation & bcrypt</li>
-              <li>Admin dashboards with analytics</li>
-              <li>Integrated online exam system with timed sessions</li>
-              <li>Bulk result generation and printing</li>
-              <li>Automated email flows and payment integration</li>
+              <li>
+                Online exam system — 1,161+ exams completed by 1,496+ users
+              </li>
+              <li>
+                Course sales via Paystack — ₦6.8M+ processed across 1,100+ users
+              </li>
+              <li>
+                Bulk result generation, printing, and automated email flows
+              </li>
             </ul>
             <div class="project-stack">
               <span class="stack-tag">React</span>
@@ -269,8 +274,9 @@
             <div class="project-name">DSDHJ</div>
             <p class="project-desc">
               Delta State Dental Health Journal — a single-journal academic
-              submission platform built from scratch with full authentication,
-              manuscript workflows, and publishing tools.
+              submission platform built from scratch, structured across 4
+              publication volumes, with full authentication and editorial
+              workflow.
             </p>
             <ul class="project-features">
               <li>Full manuscript submission and editorial workflow</li>
@@ -492,13 +498,16 @@
 
     <!-- FOOTER -->
     <footer>
-      <span class="footer-copy">© 2025 Olanrewaju Basit Oluwanifemi</span>
+      <span class="footer-copy"
+        >© 2025–<span id="year"></span> Olanrewaju Basit Oluwanifemi</span
+      >
       <span class="footer-hdw"
         >Built by <span>HDW</span> — Henry's Digital Workshop</span
       >
     </footer>
 
     <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
       // Scroll reveal
       const reveals = document.querySelectorAll(".reveal");
       const observer = new IntersectionObserver(
@@ -512,12 +521,6 @@
         { threshold: 0.1 },
       );
       reveals.forEach((el) => observer.observe(el));
-
-      // CV button placeholder
-      document.getElementById("cv-btn").addEventListener("click", (e) => {
-        e.preventDefault();
-        alert("CV coming soon — check back shortly.");
-      });
     </script>
   </body>
 </html>
